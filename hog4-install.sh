@@ -75,7 +75,9 @@ echo 'fi'
 echo 'done'
 echo 'rm /etc/network/interfaces && ln -s /etc/network/interfaces.hog4-sysconfig /etc/network/interfaces'
 echo 'rm /root/hog4-postinstall.sh'
-echo 'sed -i '/postinstall/d' /root/.fluxbox/startup'
+echo "sed -i '/postinstall/d' /root/.fluxbox/startup"
+echo "sed -i '/GRUB_VIDEO_BACKEND/d' /etc/default/grub"
+echo "grub-mkconfig -o /boot/grub/grub.cfg"
 echo 'reboot'
 } >> /root/hog4-postinstall.sh
 chmod +x /root/hog4-postinstall.sh
