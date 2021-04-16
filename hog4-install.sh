@@ -2,7 +2,7 @@
 
 mkdir -p /root/hogtmp
 cd /root/hogtmp/
-wget -O image.zip https://www.etcconnect.com/WorkArea/DownloadAsset.aspx?id=10737505930
+wget -O image.zip https://cdn.etcconnect.com/Hog4_3-15-1-3142-iso.zip
 
 apt-get install -y unzip
 
